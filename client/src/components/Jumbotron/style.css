@@ -1,0 +1,17 @@
+.jumbotron {
+  min-height: 300px;
+  color:whitesmoke;
+  background-color:blue;
+  padding-top: 100px;
+  padding:0;
+  border-radius: 0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.searchbar-text{
+  text-align: left;
+  padding-bottom: 5px;
+}
