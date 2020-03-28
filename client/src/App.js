@@ -5,8 +5,8 @@ import AddStore from "./pages/AddStore";
 import SuburbStores from "./pages/SuburbStores";
 import Nav from "./components/Nav";
 import Login from "./components/Login/login";
-import Login from "./components/Login/signup";
-
+// import Login from "./components/Login/signup";
+import Footer from "./components/Footer";
 
 function App() {
   return (

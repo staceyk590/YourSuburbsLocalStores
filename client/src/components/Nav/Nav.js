@@ -28,7 +28,7 @@ function Nav() {
         </Link>
       </li> */}
    
-    {/* <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" data-interval="1000">
+    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel" data-interval="1000">
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img className="d-block w-100" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2450,w_4368,x_0,y_165/v1562080363/shape/mentalfloss/29942-gettyimages-155302141.jpg?itok=-Z4mLcB5" alt="First slide"/>
@@ -48,7 +48,7 @@ function Nav() {
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="sr-only">Next</span>
   </a>
-</div> */}
+</div>
 </nav>
 
 {/* <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

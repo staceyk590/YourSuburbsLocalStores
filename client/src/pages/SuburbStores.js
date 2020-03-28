@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Jumbotron from "../components/Jumbotron";
+import Footer from "../components/Footer";
 import DeleteBtn from "../components/DeleteBtn";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
@@ -166,11 +167,15 @@ function SuburbStores() {
       :
               <div style={{textAlign: "center", fontSize: "16px", minHeight: "300px"}}>No Results to Display</div>
             }
+             <Footer />
           </div>
+          
           </Col>
           
         </Row>
+   
       </Container>
+      
       
     );
     
