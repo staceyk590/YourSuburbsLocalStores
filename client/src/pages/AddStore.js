@@ -113,7 +113,7 @@ function AddStore() {
               </FormBtn>
               </div>
             </form>
-            <Footer />
+        
            </div>
           </Col>
           

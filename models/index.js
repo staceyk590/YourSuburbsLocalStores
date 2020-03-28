@@ -1,4 +1,4 @@
 module.exports = {
-  Stores: require("./stores")
-  SignUp: require("./signup")
+  Stores: require("./stores"),
+  User: require("./user")
 };

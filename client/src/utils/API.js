@@ -22,9 +22,15 @@ export default {
   },
   // Saves a signup account to the database
   saveSignUp: function(signupData) {
-    return axios.post("/api/signup", signupData);
+    return axios.post("/api/user/signup", signupData);
   },
+
+  login: function(loginData) {
+    return axios.post("/api/user/login", loginData);
+  },
+
 
   
 
 };
+

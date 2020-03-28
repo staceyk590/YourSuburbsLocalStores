@@ -167,7 +167,7 @@ function SuburbStores() {
       :
               <div style={{textAlign: "center", fontSize: "16px", minHeight: "300px"}}>No Results to Display</div>
             }
-             <Footer />
+       
           </div>
           
           </Col>

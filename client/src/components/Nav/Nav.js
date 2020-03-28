@@ -32,6 +32,10 @@ function Nav() {
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img className="d-block w-100" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2450,w_4368,x_0,y_165/v1562080363/shape/mentalfloss/29942-gettyimages-155302141.jpg?itok=-Z4mLcB5" alt="First slide"/>
+      <div class="carousel-caption d-none d-md-block">
+    <h5>Buy From Your Local Independant Store</h5>
+    <p>Your Local Fruit Shop</p>
+  </div>
     </div>
     <div className="carousel-item">
       <img className="d-block w-100" src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/272/272782/oranges-in-a-box.jpg?w=1155&h=1444" alt="Second slide"/>
@@ -39,6 +43,7 @@ function Nav() {
     <div className="carousel-item">
       <img className="d-block w-100" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2450,w_4368,x_0,y_165/v1562080363/shape/mentalfloss/29942-gettyimages-155302141.jpg?itok=-Z4mLcB5" alt="Third slide"/>
     </div>
+    
   </div>
   <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -49,29 +54,36 @@ function Nav() {
     <span className="sr-only">Next</span>
   </a>
 </div>
-</nav>
 
-{/* <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+{/* <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="..." alt="First slide">
+    <div class="carousel-item active"><img className="d-block w-100" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2450,w_4368,x_0,y_165/v1562080363/shape/mentalfloss/29942-gettyimages-155302141.jpg?itok=-Z4mLcB5" alt="First slide"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide">
+    <div className="carousel-item">
+      <img className="d-block w-100" src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/272/272782/oranges-in-a-box.jpg?w=1155&h=1444" alt="Second slide"/>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
+    <div className="carousel-item">
+      <img className="d-block w-100" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2450,w_4368,x_0,y_165/v1562080363/shape/mentalfloss/29942-gettyimages-155302141.jpg?itok=-Z4mLcB5" alt="Third slide"/>
     </div>
-  </div> */}
-  
-  {/* <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a> */}
+  </a>
+</div> */}
+</nav>
+
 
 <div className={"navbar-button"} style={{marginRight: "390px"}} onClick={homeOnClick}>Home</div>
   <div className={"navbar-button"} style={{marginRight: "220px"}} onClick={addYourStoreOnClick}>Add your Store</div>
