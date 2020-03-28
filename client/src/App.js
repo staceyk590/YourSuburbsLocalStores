@@ -5,6 +5,7 @@ import AddStore from "./pages/AddStore";
 import SuburbStores from "./pages/SuburbStores";
 import Nav from "./components/Nav";
 import Login from "./components/Login/login";
+import Login from "./components/Login/signup";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={SuburbStores} />
         <Route exact path="/newstore" component={AddStore} />
         <Route path="/login" exact component={Login} />
+        <Route path="/signup" exact component={Login} />
         
       </div>
     </Router>

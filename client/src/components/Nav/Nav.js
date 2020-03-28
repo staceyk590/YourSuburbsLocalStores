@@ -73,9 +73,10 @@ function Nav() {
     <span class="sr-only">Next</span>
   </a> */}
 
-<div className={"navbar-button"} style={{marginRight: "220px"}} onClick={homeOnClick}>Home</div>
-  <div className={"navbar-button"} style={{marginRight: "75px"}} onClick={addYourStoreOnClick}>Add your Store</div>
+<div className={"navbar-button"} style={{marginRight: "390px"}} onClick={homeOnClick}>Home</div>
+  <div className={"navbar-button"} style={{marginRight: "220px"}} onClick={addYourStoreOnClick}>Add your Store</div>
   <div className={"navbar-button"} onClick={loginOnClick}>Login</div>
+  <div className={"navbar-button"} style={{marginRight: "100px"}} onClick={signupOnClick}>Sign Up</div>
 </div>
   );
 }
@@ -90,6 +91,10 @@ function addYourStoreOnClick(){
 
 function homeOnClick(){
   window.location = "/";
+}
+
+function signupOnClick(){
+  window.location = "/signup";
 }
 
 

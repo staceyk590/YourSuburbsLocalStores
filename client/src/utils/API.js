@@ -19,5 +19,12 @@ export default {
   // Saves a book to the database
   saveStore: function(storesData) {
     return axios.post("/api/stores", storesData);
-  }
+  },
+  // Saves a signup account to the database
+  saveSignUp: function(signupData) {
+    return axios.post("/api/signup", signupData);
+  },
+
+  
+
 };
