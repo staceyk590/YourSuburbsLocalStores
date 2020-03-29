@@ -6,6 +6,7 @@ import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import { Redirect } from "react-router-dom";
 
 
 function SuburbStores() {
@@ -141,13 +142,15 @@ function SuburbStores() {
                   return (
                     <ListItem key={store._id}>
                     
-                    <div style={{paddingRight: "3px", fontWeight: "bold"}}>{store.suburb}</div>
-                    <div style={{paddingRight: "3px"}}>{store.nameOfStore}</div>
-                    <div style={{paddingRight: "3px"}}>{store.phoneNumber}</div>
-                    <div style={{paddingRight: "3px"}}>{store.delivery ? "Yes" : "No"}</div>
-                    <div style={{paddingRight: "3px"}}>{store.pickup ? "Yes" : "No"}</div>
-                  <div style={{paddingRight: "3px"}}>{store.website !== "" ? <a href={"https://" + store.website}>{store.website}</a> : "No link"}</div>
-
+                    <div style={{paddingRight: "10px", fontWeight: "bold" }}>SUBURB:  {store.suburb}</div>
+                    <div style={{paddingRight: "3px" }}> NAME OF STORE:  {store.nameOfStore}</div>
+                    <div style={{paddingRight: "3px"}}> CONTACT PHONE NUMBER:  {store.phoneNumber}</div>
+                    <div style={{paddingRight: "3px"}}> DELIVERY AVAILABLE:  {store.delivery ? "Yes" : "No"}</div>
+                    <div style={{paddingRight: "3px"}}> PICKUP AVAILABLE:  {store.pickup ? "Yes" : "No"}</div>
+                    <div style={{paddingRight: "3px", color: "Red"}}> STORE WEBSITE:  {store.website !== "" ? <a href={"https://" + store.website}>{store.website}</a> : "No link"}</div>
+                    <div style={{paddingRight: "3px"}}> CONTACT PHONE NUMBER:  {store.phoneNumber}</div>
+                    <div style={{paddingRight: "3px"}}> DETAILS:  {store.details}</div>
+                    
                       {/* <a href={"/stores/" + store._id}>
                         <strong>
                           {store.suburb} 
@@ -165,7 +168,7 @@ function SuburbStores() {
                 </div>
               </List>       
       :
-              <div style={{textAlign: "center", fontSize: "16px", minHeight: "300px"}}>No Results to Display</div>
+              <div style={{textAlign: "center", fontSize: "16px", minHeight: "100px"}}>No Results to Display</div>
             }
        
           </div>

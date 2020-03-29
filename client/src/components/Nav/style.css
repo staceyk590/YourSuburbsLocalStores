@@ -1,5 +1,5 @@
 nav.navbar {
-  min-height: 300px;
+  min-height: 50px;
   padding-top: 100px;
   color:whitesmoke;
   background-color: rgb(33, 143, 247);
@@ -16,4 +16,17 @@ nav.navbar {
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     color: white;
+}
+
+.carousel-item {
+  width: auto;
+  height: 455px;
+  max-height: 455px;
+  width: 1200px;
+  max-width: 1200px;
+}
+
+.carousel-caption{
+  color: red;
+
 }

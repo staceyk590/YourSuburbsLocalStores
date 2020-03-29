@@ -36,7 +36,7 @@ module.exports = {
       db.User
         .find({email:req.params.email})
         // .find({"password":req.params.password})
-        .then(dbModel => res.json({...dbModel, password: null}))
+        .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
   }
 

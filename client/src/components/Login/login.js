@@ -71,7 +71,7 @@ export default function login(props) {
     console.log(formObject);
     event.preventDefault();
     if (formObject.email && formObject.password) {
-      API.saveSignUp({
+      API.login({
         email: formObject.email,
         password: formObject.password,
 
@@ -79,7 +79,7 @@ export default function login(props) {
         .then(res => {
           console.log(res)
           setFormObject({})
-          window.location.replace("/")
+          //window.location.replace("/")
         })
         .catch(err => console.log(err))
     }
