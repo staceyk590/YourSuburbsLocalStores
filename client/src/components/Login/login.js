@@ -77,8 +77,14 @@ export default function login(props) {
 
       })
         .then(res => {
-          console.log(res)
+          console.log("data", res)
           setFormObject({})
+         if (res.data == ""){
+          alert("Your username could not be found.");
+         }
+         else{
+          window.location = "/newstore";
+         }
           //window.location.replace("/")
         })
         .catch(err => console.log(err))

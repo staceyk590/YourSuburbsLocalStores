@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Login from "./components/Login/login";
 import SignUp from "./components/Login/signup";
 import Footer from "./components/Footer";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/newstore" component={AddStore} />
         <Route path="/login" exact component={Login} />
         <Route path="/signup" exact component={SignUp} />
+        <Route path="/aboutus" exact component={AboutUs} />
         <Footer/>
       </div>
     </Router>

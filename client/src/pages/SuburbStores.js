@@ -142,13 +142,15 @@ function SuburbStores() {
                   return (
                     <ListItem key={store._id}>
                     
-                    <div style={{paddingRight: "10px", fontWeight: "bold" }}>SUBURB:  {store.suburb}</div>
-                    <div style={{paddingRight: "3px" }}> NAME OF STORE:  {store.nameOfStore}</div>
+                    <div style={{paddingRight: "10px", fontWeight: "bold", fontSize: "22px" }}>{store.suburb}</div>
+                    <div style={{paddingRight: "3px" }}>
+                    <img src="https://img.icons8.com/material/4ac144/256/user-male.png" style={{ width: "24px", height: "24px"}}></img>
+                      NAME OF STORE:  {store.nameOfStore}
+                    </div>
                     <div style={{paddingRight: "3px"}}> CONTACT PHONE NUMBER:  {store.phoneNumber}</div>
                     <div style={{paddingRight: "3px"}}> DELIVERY AVAILABLE:  {store.delivery ? "Yes" : "No"}</div>
                     <div style={{paddingRight: "3px"}}> PICKUP AVAILABLE:  {store.pickup ? "Yes" : "No"}</div>
                     <div style={{paddingRight: "3px", color: "Red"}}> STORE WEBSITE:  {store.website !== "" ? <a href={"https://" + store.website}>{store.website}</a> : "No link"}</div>
-                    <div style={{paddingRight: "3px"}}> CONTACT PHONE NUMBER:  {store.phoneNumber}</div>
                     <div style={{paddingRight: "3px"}}> DETAILS:  {store.details}</div>
                     
                       {/* <a href={"/stores/" + store._id}>

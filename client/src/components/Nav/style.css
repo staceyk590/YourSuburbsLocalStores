@@ -22,11 +22,26 @@ nav.navbar {
   width: auto;
   height: 455px;
   max-height: 455px;
-  width: 1200px;
-  max-width: 1200px;
+  /* width: 100%;
+  max-width: 1200px; */
 }
 
 .carousel-caption{
   color: red;
+  
 
+}
+
+.carousel-item img{
+height: 100%;
+object-fit: cover;
+}
+
+.carousel-description{
+  background-color: black;
+    height: 80px;
+    position: relative;
+    top: -90px;
+    z-index: -1;
+    opacity: 0.6;
 }

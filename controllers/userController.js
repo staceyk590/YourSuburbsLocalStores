@@ -33,10 +33,13 @@ module.exports = {
   },
 
   find: function (req, res) {
+    if (req.body.email == null || req.body.email == ""){
+      return {valid: false};
+    }
       db.User
-        .find({email:req.params.email})
+        .find({email:req.body.email})
         // .find({"password":req.params.password})
-        .then(dbModel => res.json(dbModel))
+        .then(dbModel => res.json(dbModel[0]))
         .catch(err => res.status(422).json(err));
   }
 
